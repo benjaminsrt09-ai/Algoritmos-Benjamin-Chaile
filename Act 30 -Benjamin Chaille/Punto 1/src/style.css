@@ -1,0 +1,94 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #dcedc8;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    font-family: 'Georgia', serif;
+    color: #2c3e50;
+    margin-bottom: 30px;
+}
+
+.mensaje-carga {
+    text-align: center;
+    grid-column: 1 / -1;
+    font-size: 1.2rem;
+    color: #555;
+}
+
+#mensaje-error {
+    display: none;
+    background-color: #ffebee;
+    color: #c62828;
+    padding: 15px;
+    border-radius: 5px;
+    text-align: center;
+    margin: 0 auto 20px auto;
+    border: 1px solid #ef9a9a;
+    max-width: 600px;
+}
+
+.grid-productos {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap: 25px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.tarjeta {
+    background: #ffffff;
+    border-radius: 10px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.tarjeta img {
+    max-width: 100%;
+    height: 160px;
+    object-fit: contain;
+    margin-bottom: 15px;
+}
+
+.tarjeta h3 {
+    font-family: 'Georgia', serif;
+    font-size: 1.1rem;
+    color: #444;
+    margin: 10px 0;
+    flex-grow: 1;
+}
+
+.tarjeta .precio {
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: #006600;
+    margin-bottom: 15px;
+}
+
+.btn-favorito {
+    background-color: #e0e0e0;
+    color: #333;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 6px;
+    cursor: pointer;
+    width: 100%;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.btn-favorito.activo {
+    background-color: #cc0000;
+    color: white;
+}
